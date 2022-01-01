@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { submitSearch } from './searchBarSlice';
 import PropTypes from 'prop-types';
-import TypeChecker from 'typeco';
+// import TypeChecker from 'typeco';
 import { selectValue } from './searchBarSlice';
 import { useSelector } from 'react-redux';
 import { updateValue } from './searchBarSlice';
