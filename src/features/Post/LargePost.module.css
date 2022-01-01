@@ -1,0 +1,18 @@
+li {
+    display: inline;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+img {
+    padding: 35px;
+}
+
+
+
