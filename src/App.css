@@ -213,6 +213,10 @@
 
   }
 
+  body {
+    height: 130vh;
+  }
+
   
 
   header {
@@ -336,6 +340,7 @@
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  margin-bottom: 30px;
 }
 
 
