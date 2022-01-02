@@ -13,7 +13,7 @@ export function LargePost() {
   const dispatch = useDispatch();
   
 
-let title;
+let title = 'Loading';
 let upvotes;
 let author ;
 let num_comments;

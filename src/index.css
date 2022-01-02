@@ -8,6 +8,8 @@ body {
   background: linear-gradient(to right top, #f5c9ea, #f89af8);
   background-repeat: round;
   height: 100vh;
+  /* min-height: 100vh;
+  min-height: -webkit-fill-available; */
   text-align: center;
   background-attachment: fixed;
   
@@ -20,3 +22,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 
+html {
+  height: -webkit-fill-available;
+} */
