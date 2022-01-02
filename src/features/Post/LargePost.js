@@ -19,6 +19,7 @@ let author ;
 let num_comments;
 let time;
 let url;
+let makeSmaller;
 
 useEffect(()=> {
     if (searchTerm=='') {
@@ -46,8 +47,16 @@ useEffect(()=> {
                 }
             }
 
+            
+
 
             title = redditInfo.data.children[mainIndex].data.title;
+            let length = title.length;
+            if (length > 100) {
+                title = title.slice(0, 100) + "..."
+                makeSmaller = true; 
+            }
+
             upvotes = "Up-votes: " + redditInfo.data.children[mainIndex].data.ups;
             author = "Post by " + redditInfo.data.children[mainIndex].data.author;
             num_comments = redditInfo.data.children[mainIndex].data.num_comments + " comments";
@@ -96,11 +105,12 @@ useEffect(()=> {
 
   return (
     <div className="container-large fade-in-post"> 
-        
-            <h2>{title}</h2>
-            <h4>{upvotes}</h4> 
+            <div>
+                <h2>{title}</h2>
+                <h4>{upvotes}</h4> 
+            </div>
             <img src={url} alt="" className="image-post"/>
-            <ul>
+            <ul className="small-list">
                 <li>{author}</li>
                 <li>{time}</li>
                 <li>{num_comments}</li>

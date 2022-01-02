@@ -33,7 +33,7 @@ function App() {
       
       <header className="App-header">
         
-
+        
         <ThemeContext.Consumer>
             {({ changeTheme }) => (
               <Toggle
@@ -46,7 +46,9 @@ function App() {
               className="toggle"
           />
             )}
-          </ThemeContext.Consumer>
+        </ThemeContext.Consumer>
+        
+        
 
        
           

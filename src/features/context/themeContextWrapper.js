@@ -16,7 +16,7 @@ export default function ThemeContextWrapper(props) {
       case themes.dark:
       default:
         document.body.classList.remove('App-blue');
-        // document.body.classList.add('App-orange');
+        document.body.classList.add('App-pink');
         break;
     }
   }, [theme]);

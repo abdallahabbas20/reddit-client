@@ -82,9 +82,9 @@ export function SmallPost(props) {
     return (
       <div className="fade-in-post"> 
           <h3>{title}</h3>
-          <h4>Up-votes: {upvotes}</h4> 
+          <h5>Up-votes: {upvotes}</h5> 
          
-          <ul>
+          <ul className="small">
               <li>Post by: {author}</li>
               <li>{time} ago</li>
               <li>{num_comments} comments</li>
